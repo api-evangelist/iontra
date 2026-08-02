@@ -1,17 +1,39 @@
 aid: iontra
 name: Iontra
-description: 'Iontra is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Iontra Inc. is a Denver, Colorado battery technology company that develops
+  proprietary Charge-Control technology for rechargeable lithium batteries. Founded in
+  2013 and publicly launched in 2022, Iontra applies electrodynamic sensing and signal
+  processing during charging to suppress lithium plating, dendrite growth and SEI-layer
+  expansion, claiming up to 4x cycle life, 2x faster charging, improved cold-weather
+  charging and better safety without changing cell chemistry. The technology is chemistry
+  agnostic across Li-ion, Li-metal, Li-S, solid-state and Na-ion cells, and is delivered
+  to OEMs as custom charging algorithm "recipes" flashed onto an application-specific
+  microcontroller, or as a software-only library. Iontra closed a $45M Series C led by
+  Volta Energy Technologies to launch an integrated RISC-V charge-control and fuel-gauge
+  MCU. Iontra is an embedded/silicon company: it publishes no public web API, no OpenAPI,
+  and no public SDK packages — its SDK is firmware delivered to OEM customers through a
+  login-gated Document Portal under commercial engagement.'
+image: https://iontra.com/wp-content/uploads/2023/11/share.jpg
 url: https://raw.githubusercontent.com/api-evangelist/iontra/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enriched-no-api-surface
 specificationVersion: '0.20'
 created: '2026-08-01'
 modified: '2026-08-01'
 tags:
 - Company
+- Batteries
+- Battery Charging
+- Energy Storage
+- Semiconductors
+- Microcontrollers
+- Embedded Systems
+- Electric Vehicles
+- Consumer Electronics
+- Clean Energy
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +42,66 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://iontra.com/
+- type: About
+  url: https://iontra.com/about/
+- type: Blog
+  url: https://iontra.com/news-and-blogs/
+- type: BlogRSS
+  url: https://iontra.com/feed/
+- type: Support
+  url: https://iontra.com/contact/
+- type: FAQ
+  url: https://iontra.com/faq/
+- type: Careers
+  url: https://iontra.com/careers/
+- type: PrivacyPolicy
+  url: https://iontra.com/privacy-policy/
+- type: TermsOfService
+  url: https://iontra.com/terms-conditions/
+- type: DocumentPortal
+  name: Iontra Document Portal (login required, OEM customers only)
+  url: https://iontra-document-portal.vercel.app/login
+- type: Technology
+  url: https://iontra.com/iontra-benefits/
+- type: Validation
+  name: Third-party validation (University of Michigan, UL Solutions, Novonix, NREL)
+  url: https://iontra.com/validation/
+- type: CellCatalog
+  url: https://iontra.com/cell-catalog/
+- type: Engagement
+  name: Working with Iontra - two-phase characterization and integration model
+  url: https://iontra.com/working-with-iontra/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/iontra
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/iontra
+- type: InvestmentProfile
+  name: Forge Global secondary-market profile
   url: https://forgeglobal.com/iontra_stock/
+- type: DomainSecurity
+  url: security/iontra-domain-security.yml
+- type: LLMsTxt
+  url: llms/iontra-llms.txt
+x-contract-discovery:
+  date: '2026-08-01'
+  result: no-machine-readable-contract
+  note: >-
+    Iontra publishes no public API. Probed /openapi.json, /openapi.yaml, /swagger.json,
+    /api-docs and /llms.txt plus the full /.well-known/* set (security.txt,
+    openid-configuration, oauth-authorization-server, api-catalog, ai-plugin.json,
+    agent-card.json, agent.json) on iontra.com, www.iontra.com and the Document Portal
+    host — all 404 on iontra.com. The Vercel-hosted Document Portal answers 200 with an
+    identical Next.js error-page HTML body for every path (SPA catch-all) and was
+    rejected as a false positive. api/docs/developer/status/trust/portal subdomains are
+    all NXDOMAIN. No GraphQL or MCP endpoint exists to introspect. github.com/iontra is
+    an empty placeholder user account with 0 public repositories, not a company org, so
+    no GitHubOrganization pointer is wired. No first-party packages on npm, PyPI, or
+    other registries. Iontra's "SDK" is firmware — charging algorithm libraries built
+    per MCU and battery, delivered to OEM customers under commercial engagement via the
+    login-gated Document Portal.
+x-enrichment:
+  date: '2026-08-01'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

@@ -1,0 +1,72 @@
+generated: '2026-08-01'
+method: probed
+source: live GET of /.well-known/* on every Iontra host
+note: >-
+  No .well-known document is published on any Iontra host. This file records the probe
+  so later runs do not repeat it and so the absence is auditable. No WellKnown or
+  SecurityTxt pointer is wired in apis.yml because there is no catalog to point at.
+hosts:
+- host: https://iontra.com
+  platform: WordPress (WP Engine)
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://www.iontra.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://iontra-document-portal.vercel.app
+  platform: Next.js on Vercel (login-gated)
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    rejected: true
+    reason: >-
+      SPA catch-all. Every /.well-known/* path returns HTTP 200 with an identical
+      12,490-byte Next.js error-page HTML body (id="__next_error__"), not a document.
+      Rejected as the documented false positive, not recorded as a hit.
+  - path: /.well-known/agent-card.json
+    status: 200
+    rejected: true
+    reason: same SPA catch-all HTML body; not an AgentCard JSON object
+  - path: /.well-known/agent.json
+    status: 200
+    rejected: true
+    reason: same SPA catch-all HTML body; not an AgentCard JSON object
+subdomains_probed:
+  result: NXDOMAIN
+  names:
+  - api.iontra.com
+  - docs.iontra.com
+  - developer.iontra.com
+  - developers.iontra.com
+  - status.iontra.com
+  - trust.iontra.com
+  - security.iontra.com
+  - portal.iontra.com
+  - app.iontra.com
+  - cloud.iontra.com

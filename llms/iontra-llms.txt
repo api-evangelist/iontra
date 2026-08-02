@@ -1,0 +1,72 @@
+# Iontra Inc.
+
+> Iontra is a Denver, Colorado battery technology company developing proprietary
+> Charge-Control technology for rechargeable lithium batteries. Its electrodynamic
+> sensing and signal-processing approach suppresses lithium plating, dendrite growth
+> and SEI-layer expansion during charging, claiming up to 4x cycle life, 2x faster
+> charging, better cold-weather performance and improved safety without changing cell
+> chemistry. Iontra delivers the technology to OEMs as a custom charging algorithm
+> flashed onto an application-specific microcontroller, or as a software-only library,
+> and is bringing an integrated RISC-V charge-control and fuel-gauge MCU to production.
+
+## API surface
+
+Iontra publishes **no public web API**. As of 2026-08-01 there is no OpenAPI, Swagger,
+GraphQL, AsyncAPI, MCP server, A2A agent card, public SDK package, or developer portal.
+Iontra is an embedded/silicon company: its "SDK" is firmware — charging algorithm
+libraries built for a specific MCU and battery, delivered to OEM customers under
+commercial engagement through a login-gated Document Portal. Integration is a
+services engagement (battery characterization, then product integration), not
+self-service API onboarding.
+
+## Company
+
+- [Iontra](https://iontra.com/): Company home — Charge-Control technology for rechargeable batteries
+- [About Iontra](https://iontra.com/about/): Founded 2013 in Denver; offices in Plano, Texas and Bangalore, India; 100+ staff; 207 patents held or contributed to
+- [Working with Iontra](https://iontra.com/working-with-iontra/): Two-phase engagement — battery characterization, then product integration
+- [Careers](https://iontra.com/careers/): Open roles
+- [Contact](https://iontra.com/contact/): Contact Iontra
+
+## Technology
+
+- [Iontra Benefits](https://iontra.com/iontra-benefits/): How Charge-Control works and what it improves
+- [FAQ](https://iontra.com/faq/): Common technical questions
+- [Validation](https://iontra.com/validation/): Independent validation by the University of Michigan, UL Solutions, Novonix and NREL
+- [Cell Catalog](https://iontra.com/cell-catalog/): Cells characterized with Iontra Charge-Control
+- [Environmental Impact](https://iontra.com/environmental-impact/): Sustainability and carbon-footprint position
+
+## Applications
+
+- [Mobile Phones](https://iontra.com/mobile-phones/)
+- [Power Banks](https://iontra.com/power-banks/)
+- [Wearables](https://iontra.com/wearables/)
+- [Hearables](https://iontra.com/hearables/)
+- [AR/VR](https://iontra.com/ar-vr/)
+- [Power Tools](https://iontra.com/power-tools/)
+- [Floor Care](https://iontra.com/floorcare/)
+- [EVs, E-Bikes and E-Scooters](https://iontra.com/evs-e-bikes-and-e-scooters/)
+
+## Customer resources
+
+- [Document Portal](https://iontra-document-portal.vercel.app/login): Login-gated portal where OEM customers receive algorithm libraries, reference designs and documentation
+
+## News
+
+- [News & Insights](https://iontra.com/news-and-blogs/): Company news and technical posts
+- [RSS](https://iontra.com/feed/): Blog feed
+
+## Legal
+
+- [Privacy Policy](https://iontra.com/privacy-policy/)
+- [Terms & Conditions](https://iontra.com/terms-conditions/)
+
+## Optional
+
+- [LinkedIn](https://www.linkedin.com/company/iontra)
+- [Crunchbase](https://www.crunchbase.com/organization/iontra): Funding history — $120.3M raised, $45M Series C led by Volta Energy Technologies
+- [Forge Global](https://forgeglobal.com/iontra_stock/): Secondary-market profile
+
+---
+generated: 2026-08-01
+method: generated
+source: apis.yml + iontra.com (searched 2026-08-01); no provider-published /llms.txt exists (HTTP 404)
