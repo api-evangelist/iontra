@@ -13,6 +13,17 @@ description: 'Iontra Inc. is a Denver, Colorado battery technology company that 
   MCU. Iontra is an embedded/silicon company: it publishes no public web API, no OpenAPI,
   and no public SDK packages — its SDK is firmware delivered to OEM customers through a
   login-gated Document Portal under commercial engagement.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://iontra.com/wp-content/uploads/2023/11/share.jpg
 url: https://raw.githubusercontent.com/api-evangelist/iontra/refs/heads/main/apis.yml
 x-type: company
